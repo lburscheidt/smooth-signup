@@ -17,6 +17,10 @@
     'Helvetica Neue',
     sans-serif;
 }
+p {
+  color: #fff;
+}
+
 body {
   display: flex;
 
@@ -29,12 +33,17 @@ body {
 }
 
 aside {
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: calc(100% / 3);
   height: 100%;
   border: 3px solid blue;
+}
+
+photo-credit {
+  text-align: center;
 }
 
 logo-container {
@@ -46,8 +55,19 @@ logo-container {
   height: calc(100% / 3);
 }
 logo {
+  display: flex;
+  font-family: norse;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
   background-color: rgba(0, 0, 0, 0.3);
   height: 40%;
+  justify-content: center;
+}
+
+logo img {
+  max-height: 100%;
+  width: auto;
 }
 main {
   display: flex;
@@ -59,11 +79,17 @@ main {
 }
 inner-column {
   padding-left: 50px;
+  border: 5px solid lime;
 }
 hero {
+  display: flex;
+  align-items: flex-end;
   padding-top: 20px;
   height: calc(100% / 3);
   border: 3px solid blue;
+}
+hero p {
+  font-size: 2rem;
 }
 form {
   height: calc(200% / 3);
