@@ -1,0 +1,134 @@
+@font-face {
+  font-family: norse;
+  src: url(src/Norse-Bold.otf);
+}
+
+:root {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+}
+body {
+  display: flex;
+
+  height: 100vh;
+  width: 100vw;
+  /*background-color: green;*/
+  border: 3px solid darkgreen;
+  background-image: url(img/mountains-aleks-dahlberg-unsplash.jpg);
+  object-fit: scale-down;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(100% / 3);
+  height: 100%;
+  border: 3px solid blue;
+}
+
+logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 3px solid lime;
+  width: 100%;
+  height: calc(100% / 3);
+}
+logo {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 40%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gray-warm-30);
+  height: 100%;
+  width: calc(200% / 3);
+  border: 3px solid yellow;
+}
+inner-column {
+  padding-left: 50px;
+}
+hero {
+  padding-top: 20px;
+  height: calc(100% / 3);
+  border: 3px solid blue;
+}
+form {
+  height: calc(200% / 3);
+  border: 3px solid turquoise;
+  display: flex;
+  flex-direction: column;
+}
+form-upper {
+  padding-top: 20px;
+  background-color: var(--gray-5);
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  border: 3px solid red;
+  justify-content: flex-start;
+}
+
+form-heading {
+  font-size: 2rem;
+}
+
+row {
+  display: flex;
+  gap: 50px;
+  border: 3px solid darkgreen;
+}
+
+form-fields {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--gray-5);
+  border: 3px solid orange;
+  gap: 10px;
+}
+
+column {
+  border: 3px solid lime;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+item {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid yellow;
+}
+
+form-buttons {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+  height: 50%;
+}
+
+button {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--blue-30v);
+}
+main a {
+  text-decoration: none;
+  color: var(--blue-30v);
+}
+aside a {
+  color: inherit;
+}
