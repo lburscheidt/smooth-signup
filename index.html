@@ -13,7 +13,9 @@
   <body>
     <aside>
       <logo-container>
-        <logo><img src="img/odin-lined.png">ODIN</logo></logo-container
+        <logo
+          ><img src="img/odin-lined.png" alt="ODIN Logo">ODIN</logo
+        ></logo-container
       ><photo-credit
         >Photo by
         <a
@@ -30,12 +32,13 @@
     <main>
       <hero
         ><inner-column>
-          <form-heading
-            >This is a sign-up form for an incredible coding course and
-            community. And the best thing? It's free!<br>
-            Just give us some details below to become part of something
-            amazing.</form-heading
-          >
+          <p>
+            This is a sign-up form for an incredible coding course and
+            community. And the best thing? It's free!
+          </p>
+          <p>
+            Just give us some details below to become part of something amazing.
+          </p>
         </inner-column></hero
       >
       <form>
@@ -49,28 +52,28 @@
                   ><input id="firstname" type="text">
                 </item>
                 <item>
+                  <label for="lastname">Last name</label
+                  ><input id="lastname" type="text">
+                </item>
+              </row>
+              <row>
+                <item>
                   <label for="email">Email</label
-                  ><input id="lastname" type="email">
+                  ><input id="email" type="email">
+                </item>
+                <item>
+                  <label for="phone">Phone number</label
+                  ><input id="phone" type="number">
                 </item>
               </row>
               <row>
                 <item>
-                  <label for="password">First name</label
-                  ><input id="firstname" type="text">
+                  <label for="password">Password</label
+                  ><input id="password" type="password">
                 </item>
                 <item>
-                  <label for="firstname">First name</label
-                  ><input id="firstname" type="text">
-                </item>
-              </row>
-              <row>
-                <item>
-                  <label for="firstname">First name</label
-                  ><input id="firstname" type="text">
-                </item>
-                <item>
-                  <label for="firstname">First name</label
-                  ><input id="firstname" type="text"> </item
+                  <label for="confirm-password">Confirm Password</label
+                  ><input id="confirm-password" type="password"> </item
               ></row>
             </form-fields>
           </inner-column>

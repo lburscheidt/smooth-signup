@@ -17,7 +17,7 @@
     'Helvetica Neue',
     sans-serif;
 }
-p {
+aside p {
   color: #fff;
 }
 
@@ -26,8 +26,7 @@ body {
 
   height: 100vh;
   width: 100vw;
-  /*background-color: green;*/
-  border: 3px solid darkgreen;
+
   background-image: url(img/mountains-aleks-dahlberg-unsplash.jpg);
   object-fit: scale-down;
 }
@@ -39,18 +38,18 @@ aside {
   justify-content: space-between;
   width: calc(100% / 3);
   height: 100%;
-  border: 3px solid blue;
 }
 
 photo-credit {
   text-align: center;
+  color: #000;
 }
 
 logo-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  border: 3px solid lime;
+
   width: 100%;
   height: calc(100% / 3);
 }
@@ -75,46 +74,42 @@ main {
   background-color: var(--gray-warm-30);
   height: 100%;
   width: calc(200% / 3);
-  border: 3px solid yellow;
 }
 inner-column {
   padding-left: 50px;
-  border: 5px solid lime;
 }
 hero {
   display: flex;
-  align-items: flex-end;
-  padding-top: 20px;
+  align-items: center;
+  padding-top: 10px;
   height: calc(100% / 3);
-  border: 3px solid blue;
 }
-hero p {
-  font-size: 2rem;
-}
+
 form {
   height: calc(200% / 3);
-  border: 3px solid turquoise;
+
   display: flex;
   flex-direction: column;
 }
 form-upper {
-  padding-top: 20px;
   background-color: var(--gray-5);
   display: flex;
   flex-direction: column;
   height: 50%;
-  border: 3px solid red;
-  justify-content: flex-start;
+
+  justify-content: center;
+}
+hero p {
+  font-size: 1.5rem;
 }
 
 form-heading {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 row {
   display: flex;
   gap: 50px;
-  border: 3px solid darkgreen;
 }
 
 form-fields {
@@ -122,12 +117,14 @@ form-fields {
   flex-direction: column;
 
   background-color: var(--gray-5);
-  border: 3px solid orange;
+
   gap: 10px;
 }
-
+label {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
 column {
-  border: 3px solid lime;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -135,15 +132,29 @@ column {
 item {
   display: flex;
   flex-direction: column;
-  border: 3px solid yellow;
+}
+
+input {
+  padding: 2px;
+  border: 1px solid var(--gray-warm-30);
+  border-radius: 5px;
+}
+
+input:focus {
+  border: 1px solid var(--mint-60);
+  box-shadow: 5px 5px 5px var(--mint-40);
+}
+
+input:invalid {
+  border: 1px solid var(--red-70v);
 }
 
 form-buttons {
   padding-top: 20px;
   display: flex;
   flex-direction: column;
-  border: 3px solid black;
   height: 50%;
+  gap: 20px;
 }
 
 button {
