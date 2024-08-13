@@ -36,6 +36,7 @@
             This is a sign-up form for an incredible coding course and
             community. And the best thing? It's free!
           </p>
+          <br>
           <p>
             Just give us some details below to become part of something amazing.
           </p>
@@ -77,7 +78,7 @@
                   ><input
                     id="password"
                     type="password"
-                    pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"
+                    pattern="^(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,16}$"
                     required
                   >
                 </item>
@@ -86,7 +87,7 @@
                   ><input
                     id="confirm-password"
                     type="password"
-                    pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"
+                    pattern="^(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,16}$"
                     required
                   > </item
               ></row>

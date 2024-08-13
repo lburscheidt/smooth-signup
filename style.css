@@ -28,7 +28,7 @@ body {
   width: 100vw;
 
   background-image: url(img/mountains-aleks-dahlberg-unsplash.jpg);
-  object-fit: scale-down;
+  background-size: contain;
 }
 
 aside {
@@ -42,7 +42,8 @@ aside {
 
 photo-credit {
   text-align: center;
-  color: #000;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 logo-container {
@@ -59,9 +60,10 @@ logo {
   font-size: 4rem;
   font-weight: 700;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
   height: 40%;
   justify-content: center;
+  align-items: center;
 }
 
 logo img {
@@ -71,7 +73,7 @@ logo img {
 main {
   display: flex;
   flex-direction: column;
-  background-color: var(--gray-warm-30);
+  background-color: var(--gray-warm-10);
   height: 100%;
   width: calc(200% / 3);
 }
@@ -136,17 +138,24 @@ item {
 
 input {
   padding: 2px;
-  border: 1px solid var(--gray-warm-30);
+  border: 1px solid var(--gray-warm-10);
   border-radius: 5px;
 }
 
 input:focus {
-  border-color: var(--mint-60);
-  box-shadow: 5px 5px 5px var(--mint-40);
+  border: none;
+  border: 1px solid var(--mint-60);
+  box-shadow: 3px 3px 3px var(--mint-40);
+}
+
+input:invalid:focus {
+  border-color: var(--red-50v);
+  background-color: var(--rec-20v);
 }
 
 input:invalid {
   border-color: var(--red-50v);
+  background-color: var(--rec-20v);
 }
 
 form-buttons {
@@ -160,12 +169,16 @@ form-buttons {
 button {
   border-radius: 10px;
   padding: 20px;
-  background-color: var(--blue-30v);
+  background-color: var(--blue-50v);
+  color: #fff;
 }
 main a {
   text-decoration: none;
-  color: var(--blue-30v);
+  color: var(--blue-50v);
 }
 aside a {
   color: inherit;
+}
+form-buttons p {
+  margin-top: 20px;
 }
