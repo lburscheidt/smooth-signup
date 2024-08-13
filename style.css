@@ -115,6 +115,7 @@ row {
 }
 
 form-fields {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
 
@@ -168,9 +169,10 @@ form-buttons {
 
 button {
   border-radius: 10px;
-  padding: 20px;
+  padding: 10px 30px;
   background-color: var(--blue-50v);
   color: #fff;
+  font-weight: 600;
 }
 main a {
   text-decoration: none;
