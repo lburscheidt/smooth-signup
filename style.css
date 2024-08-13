@@ -141,12 +141,12 @@ input {
 }
 
 input:focus {
-  border: 1px solid var(--mint-60);
+  border-color: var(--mint-60);
   box-shadow: 5px 5px 5px var(--mint-40);
 }
 
 input:invalid {
-  border: 1px solid var(--red-70v);
+  border-color: var(--red-50v);
 }
 
 form-buttons {

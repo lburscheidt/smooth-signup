@@ -41,7 +41,7 @@
           </p>
         </inner-column></hero
       >
-      <form>
+      <form action="#" method="get">
         <form-upper>
           <inner-column>
             <form-heading>Let's do this!</form-heading>
@@ -63,24 +63,39 @@
                 </item>
                 <item>
                   <label for="phone">Phone number</label
-                  ><input id="phone" type="number">
+                  ><input
+                    id="phone"
+                    type="number"
+                    minlength="10"
+                    maxlength="12"
+                  >
                 </item>
               </row>
               <row>
                 <item>
                   <label for="password">Password</label
-                  ><input id="password" type="password">
+                  ><input
+                    id="password"
+                    type="password"
+                    pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"
+                    required
+                  >
                 </item>
                 <item>
                   <label for="confirm-password">Confirm Password</label
-                  ><input id="confirm-password" type="password"> </item
+                  ><input
+                    id="confirm-password"
+                    type="password"
+                    pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"
+                    required
+                  > </item
               ></row>
             </form-fields>
           </inner-column>
         </form-upper>
         <form-buttons
           ><inner-column
-            ><button>Create account</button>
+            ><button type="submit">Create account</button>
             <p>Already have an account? <a href="">Log in</a></p></inner-column
           >
         </form-buttons>
