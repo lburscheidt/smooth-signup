@@ -28,7 +28,7 @@ body {
   width: 100vw;
 
   background-image: url(img/mountains-aleks-dahlberg-unsplash.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
 aside {
