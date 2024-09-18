@@ -1,19 +1,18 @@
 {
+  "plugins": ["@awmottaz/prettier-plugin-void-html"],
   "arrowParens": "avoid",
   "bracketSpacing": true,
-  "endOfLine": "auto",
   "htmlWhitespaceSensitivity": "css",
   "insertPragma": false,
   "jsxBracketSameLine": false,
-  "jsxSingleQuote": true,
+  "jsxSingleQuote": false,
   "printWidth": 80,
   "proseWrap": "always",
   "quoteProps": "as-needed",
   "requirePragma": false,
-  "semi": false,
-  "singleQuote": true,
+  "semi": true,
+  "singleQuote": false,
   "tabWidth": 2,
   "trailingComma": "all",
-  "useTabs": false,
-  "plugins": ["@awmottaz/prettier-plugin-void-html"]
+  "useTabs": true
 }
